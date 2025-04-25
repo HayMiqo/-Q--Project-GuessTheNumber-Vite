@@ -25,8 +25,8 @@ inputButton.addEventListener('click', () =>{
         alert('ты угадал')
 
     } else if (numberField.value === '' || isNaN(userChoosed)) {
-        alert('Пожалуйста, введите число')
         numberField.classList.add('shake')
+        alert('Пожалуйста, введите число')
         setTimeout(() => numberField.classList.remove('shake'), 500)
         return
 
